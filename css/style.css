@@ -11,6 +11,7 @@
 }
 
 #logo {
+    color: #03a6a6;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -21,16 +22,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #e7e7e7;
+    background-color: #260273;
 }
 
-a {
-    color: #000;
-    transition: .4s;
+li {
+    padding: 0 1rem;
 }
 
-a:hover {
-    background-color: rgba(0, 0, 0, .05);
+li a{    
+    color: #cdfff6;
+    transition: .5s;
+    text-align: center;
+    
+}
+
+li:hover {
+    background-color: rgba(253, 0, 0, 0.5);
+    border-radius: 40px 0;
+    padding: 0 1rem;
+    margin: 0 .2rem;
+    transition: .5s;
 }
 
 #menu {
@@ -49,7 +60,7 @@ a:hover {
 
 /*mobile responsive 600px*/
 
-@media (max-width: 600px) {
+@media (max-width: 666px) {
     #menu {
         display: block;
         position: absolute;
@@ -57,7 +68,7 @@ a:hover {
         top: 70px;
         height: 0;
         right: 0;
-        background: #e7e7e7;
+        background: #260273;
         transition: .6s;
         z-index: 1000;
         visibility: hidden;
@@ -72,11 +83,12 @@ a:hover {
 
     #menu a {
         padding: 1rem 0;
-        border-bottom: 2px solid rgba(0, 0, 0, .05);
+        border-bottom: 2px solid rgba(189, 189, 189, 0.05);
     }
 
     #btn-mobile {
         display: flex;
+        color: #cdfff6;
         padding: .5rem 1rem;
         font-size: 1rem;
         border: none;
